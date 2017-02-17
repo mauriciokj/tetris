@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Phaser Tetris</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!--Library-->
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCo8zRvHVPTTlWmlRHxSV7LSEI5kXkfCYU",
+        authDomain: "tetris-da-firma.firebaseapp.com",
+        databaseURL: "https://tetris-da-firma.firebaseio.com",
+        storageBucket: "tetris-da-firma.appspot.com",
+        messagingSenderId: "953839326825"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="/phaser.min.js"></script>
+
+    <script type="text/javascript" src="/Tetris.js"></script>
+    <script type="text/javascript" src="/Boot.js"></script>
+    <script type="text/javascript" src="/Preloader.js"></script>
+    <script type="text/javascript" src="/MainMenu.js"></script>
+
+    <script type="text/javascript" src="/Game.js"></script>
+    <script type="text/javascript" src="/Shape.js"></script>
+    <script type="text/javascript" src="/Block.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        Tetris.run();
+      }
+    </script>
+  </body>
+</html>
